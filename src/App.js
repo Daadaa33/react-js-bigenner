@@ -1,24 +1,22 @@
-import React from "react";
-import Hellow from "./conpnent/Hellow";
-import App from "./conpnent/App"
+import Home from "./components/Home";
+import Header from "./components/Header";
+import {BrowserRouter as Router} from "react-router-dom"
+import About from "./components/About";
 
-//function App() {
-  //return (
-    // <h1>welcome react</h1>
-  //)
-//}
-
-class app extends React.Component {
- render() {
+function app () {
   return (
-  
-    <div >
-      <Hellow name="daadir quule" />
-     <App /> 
-     <footer />  
+  <>
+  <Router>
+     <div className="max-w-4xl	 mx-auto ">
+      <Header />
+      <About />
     </div>
+    <Home />
+  </Router>
+   
+  </>
   )
  }
-}
+
 
 export default app; 
